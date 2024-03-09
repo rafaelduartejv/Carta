@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Carta Virtual para Inha</title>
+</head>
+<body>
+<div class="envelope-wrapper">
+    <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+            <p class="words line1">Oi amor!</p>
+            <p class="words line2">Espero que goste!</p>
+            <p class="words line3">Com amor,</p>
+            <p class="words line4">Fango</p>
+        </div>
+        <div class="hearts">
+            <div class="heart a1"></div>
+            <div class="heart a2"></div>
+            <div class="heart a3"></div>
+        </div>
+    </div>
+</div>
+<div class="reset">
+    <button id="open">Abrir</button>
+    <button id="reset">Resetar</button>
+    <a href="https://rafaelduartejv.github.io/love/" id="outra_pagina" style="display: none;"><button>Ler a carta!</button></a>
+</div>
+<h1 class="valentine">Te amo!</h1>
+<script src="index.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#open").click(function(){
+            $("#envelope").toggleClass("close open");
+            $("#outra_pagina").show();
+        });
+    });
+</script>
+</body>
+</html>
